@@ -1,6 +1,7 @@
+.metadata
+.settings
 .classpath
 .project
-.settings
 target
 *.class
 *.jar

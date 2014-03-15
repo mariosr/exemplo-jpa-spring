@@ -2,17 +2,18 @@ package br.ufc.quixada.npi.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import org.springframework.transaction.annotation.Transactional;
 
 import br.ufc.quixada.npi.model.Contato;
 import br.ufc.quixada.npi.repository.ContatoRepository;
 
-@Service
+@Named
 public class ContatoServiceImpl implements ContatoService {
 
-	@Autowired
+	@Inject
 	private ContatoRepository contatoRepository;
 
 	public ContatoServiceImpl() {

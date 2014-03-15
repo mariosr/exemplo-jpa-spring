@@ -2,15 +2,14 @@ package br.ufc.quixada.npi.repository.jpa;
 
 import java.util.List;
 
+import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-
-import org.springframework.stereotype.Repository;
 
 import br.ufc.quixada.npi.model.Contato;
 import br.ufc.quixada.npi.repository.ContatoRepository;
 
-@Repository
+@Named
 public class JpaContatoRepositoryImpl implements ContatoRepository {
 
 	@PersistenceContext

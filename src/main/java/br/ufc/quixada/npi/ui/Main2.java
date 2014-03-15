@@ -2,6 +2,9 @@ package br.ufc.quixada.npi.ui;
 
 import java.util.List;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
@@ -9,10 +12,10 @@ import org.springframework.stereotype.Component;
 import br.ufc.quixada.npi.model.Contato;
 import br.ufc.quixada.npi.service.ContatoService;
 
-@Component
+@Named
 public class Main2 {
 	
-	@Autowired
+	@Inject
 	private ContatoService cs;
 	
 	public static void main(String[] args) {
